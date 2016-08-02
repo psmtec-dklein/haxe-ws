@@ -30,6 +30,9 @@ class WebSocket {
     public function process() {
     }
 
+	public function close() {
+	}
+
     public function sendString(message:String) {
     }
 

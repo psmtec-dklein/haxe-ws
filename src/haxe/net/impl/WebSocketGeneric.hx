@@ -202,7 +202,7 @@ class WebSocketGeneric extends WebSocket {
         return Utf8Encoder.encode(lines.join("\r\n") + "\r\n\r\n");
     }
 
-    public function close() {
+    override public function close() {
         sendFrame(Bytes.alloc(0), Opcode.Close);
         socket.close();
     }
